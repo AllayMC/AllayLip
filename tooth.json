@@ -1,0 +1,31 @@
+{
+    "format_version": 2,
+    "tooth": "github.com/AllayMC/Allay",
+    "version": "1.0.1",
+    "info": {
+        "name": "Allay",
+        "description": "The next-generation Minecraft: Bedrock Edition server software",
+        "author": "AllayMC",
+        "tags": []
+    },
+    "asset_url": "https://github.com/smartcmd/AllayLip/releases/download/1.0.1/allay.exe",
+    "files": {
+        "place": [
+            {
+                "src": "allay/*",
+                "dest": ""
+            }
+        ]
+    },
+    "platforms": [
+        {
+            "goos": "windows",
+            "goarch": "amd64",
+            "commands": {
+                "post_install": [
+                    ".\\allay.exe"
+                ]
+            }
+        }
+    ]
+}
